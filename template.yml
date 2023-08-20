@@ -9,6 +9,8 @@ Resources:
         Runtime: python3.7
         MemorySize: 256
         Timeout: 300
+        Code:
+            CodeUri: .
         Role: !GetAtt LambdaRole.Arn
         Environment:
             Variables:
