@@ -5,7 +5,7 @@ Resources:
   S3ArtifactsBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Sub codepipeline-artefactos-${AWS::AccountId}-${AWS::Region}
+      BucketName: !Sub codepipeline-package-${AWS::AccountId}-${AWS::Region}
 
   S3ArtifactsBucketPolicy:
     Type: AWS::S3::BucketPolicy

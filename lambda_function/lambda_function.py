@@ -2,8 +2,6 @@ import boto3
 import os
 from boto3.dynamodb.conditions import Key
 
-# Hola a todos queridos uniandinos, alvaro, dario, desiree, felipe, juan, katerin, leo, rafa, seba, valen
-
 DYNAMO_BD = os.environ['DYNAMO_BD']
 
 class DynamoAccessor:
@@ -11,12 +9,12 @@ class DynamoAccessor:
         dynamo_db = boto3.resource('dynamodb')
         self.table = dynamo_db.Table(dynamo_table)
 
-    def get_data_from_dynamo(self, cc):
-        response = self.table.query(KeyConditionExpression=Key('cc').eq(cc))
+    def get_data_from_dynamo(self, id):
+        response = self.table.query(KeyConditionExpression=Key('id').eq(id))
         return response["Items"][0] if any(response["Items"]) else None
 
 def lambda_handler(event, context):
     dynamo_backend = DynamoAccessor(DYNAMO_BD)
-    db_element = dynamo_backend.get_data_from_dynamo(event['cc'])
+    db_element = dynamo_backend.get_data_from_dynamo(event['id'])
     return db_element
 
