@@ -11,4 +11,4 @@ The repository holds all the insights, code, and documentation you need to explo
 
 Visit the repository: [CICD-lambda-serverless](https://github.com/anthonymelchor/CICD-lambda-serverless.git) to uncover the full potential of AWS CodePipeline and streamline your serverless deployment journey.
 
-Happy coding!
+# Happy coding!
