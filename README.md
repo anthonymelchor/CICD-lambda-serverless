@@ -1,4 +1,4 @@
-# Project Introduction: Streamlined AWS CodePipeline for Lambda and CloudFormation
+# Streamlined AWS CodePipeline for Lambda and CloudFormation
 
 Welcome to the GitHub repository: [CICD-lambda-serverless](https://github.com/anthonymelchor/CICD-lambda-serverless.git). This project is all about optimizing your deployment process with an AWS CodePipeline that seamlessly handles Lambda functions and CloudFormation stacks.
 
