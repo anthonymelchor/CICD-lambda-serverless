@@ -98,8 +98,9 @@ Choose the 'capabilities' option and select the CloudFormation role that was cre
 ![19](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/8f4302fb-ab30-4b78-8ac3-fb4373fb8f7c)
 
 After all those instructions, the pipeline will start to execute. If you have followed the steps correctly, you should see a screen like this, indicating that the pipeline flow was executed successfully.
-
 ![20](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/8d2b5b7d-5d6d-437a-905f-d35260def588)
 
- We can accesss the AWS Lambda service to confirm that the Lambda function has been successfully created.
+We can accesss the AWS Lambda service to confirm that the Lambda function has been successfully created.
+
+![21](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/072f63b7-ae30-4e1a-bcc4-0642ba621ed4)
 
