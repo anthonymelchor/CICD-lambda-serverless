@@ -49,6 +49,9 @@ sh dynamodb.sh
 ![6](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/8a354367-c143-4bb8-a61b-9058c074436a)
 
 ### Creating Pipeline
+
+In this step, we will create a pipeline that packages our code from the GitHub repository and generates a Lambda function along with a corresponding role.
+
 1. Navigate to the CodePipeline service in the AWS console and create a new pipeline:
 
 ![7](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/4859b15e-d3e7-4045-8c61-89311cac16d6)
@@ -94,5 +97,9 @@ Choose the 'capabilities' option and select the CloudFormation role that was cre
 
 ![19](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/8f4302fb-ab30-4b78-8ac3-fb4373fb8f7c)
 
+After all those instructions, the pipeline will start to execute. If you have followed the steps correctly, you should see a screen like this, indicating that the pipeline flow was executed successfully.
 
+![20](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/8d2b5b7d-5d6d-437a-905f-d35260def588)
+
+ We can accesss the AWS Lambda service to confirm that the Lambda function has been successfully created.
 
