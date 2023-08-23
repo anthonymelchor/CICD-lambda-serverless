@@ -119,3 +119,19 @@ Finally, the pipeline will execute each time the master branch receives a push. 
 ![25](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/738d44ac-0f4c-4cb1-acbd-c38777fe9bdb)
 
 ![26](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/8ae90b2d-2a06-4a5e-a78a-c24d282560ac)
+
+## Conclusion
+
+And there you go! You're all set to dive into the cool world of AWS CodePipeline, Lambda, and CloudFormation. 🚀
+
+Quick recap of your moves:
+
+- CodePipeline does the heavy lifting while you relax.
+- Lambda lets your code shine, no sweat involved.
+- CloudFormation helps you build stuff without the hassle.
+
+Ready to rock? Check out the action in the [CICD-lambda-serverless](https://github.com/anthonymelchor/CICD-lambda-serverless.git) repository. It's got everything you need to boost your deployment skills, whether you're a coding ninja or just starting out.
+
+So go ahead, rock that code, make those functions groove, and build those resources like a boss. Your journey into the serverless world starts right here. Happy coding, and may your deployments always be smooth sailing! 🎉
+
+Catch you on the flip side!
