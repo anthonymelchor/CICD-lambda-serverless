@@ -114,6 +114,4 @@ We set up a test event in the Lambda function,  for testing purposes. Afterward,
 
 ![24](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/c8ba7d2b-d820-4223-85d8-4d85a912530b)
 
-Now, the pipeline will execute each time the master branch receives a push. To confirm this, make this change ```
-return response["Items"][0] if any(response["Items"]) else {"Result" : "No registers found"}
-``` in the Lambda function within the master branch. Once this change is made, the pipeline will be triggered, resulting in an automatic modification of the Lambda function.
+Finally, the pipeline will execute each time the master branch receives a push. To confirm this, make the following change in the Lambda function within the master branch: replace "return response["Items"][0] if any(response["Items"]) else None" with "return response["Items"][0] if any(response["Items"]) else {"Result": "No registers found"}. Once this change is made, the pipeline will be triggered, resulting in an automatic modification of the Lambda function.
