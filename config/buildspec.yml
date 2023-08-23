@@ -1,8 +1,8 @@
 version: 0.2
 phases:
   install:
-    commands:
-      - npm install
+    runtime-versions:
+      docker: 18
   build:
     commands:
       - aws cloudformation package --template-file template.yml --s3-bucket ${S3_BUCKET} --output-template-file output.yml
