@@ -86,3 +86,13 @@ In the 'Buildspec' option select 'Use a buildspec file' and type 'config/buildsp
 
 ![17](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/6079bc07-67a7-4d51-a5eb-81ac9a58e6f5)
 
+In the 'Add deploy stage' step, choose AWS CloudFormation as the deploy provider. Select the 'Create or update a stack' option, and then provide a name for the 'stack name.' Next, pick 'BuildArtifact' in the 'Artifact name' field and in the file name field, put the name of the output template. In the 'file name' field, enter the name of the output template, which is generated during the artifact compilation step and defined in the 'buildspec.yml' file. In our scenario, this template is named 'output.yml'.
+
+![18](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/32312074-2b23-461f-9a94-9b771ea1dae4)
+
+Choose the 'capabilities' option and select the CloudFormation role that was created using the 'codepipeline-transactions' stack. Then, click on the 'Next' button followed by the 'Create pipeline' button.
+
+![19](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/8f4302fb-ab30-4b78-8ac3-fb4373fb8f7c)
+
+
+
