@@ -104,3 +104,16 @@ We can accesss the AWS Lambda service to confirm that the Lambda function has be
 
 ![21](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/072f63b7-ae30-4e1a-bcc4-0642ba621ed4)
 
+By navigating to the DynamoDB service in the AWS console, we can locate the 'transactions' table, which was created through the 'dynamodb-transactions' stack. Here, we will proceed to create a couple of items and attributes in order to validate our Lambda function.
+
+![22](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/17b612cd-7dab-4adb-afb6-f2bd410047bb)
+
+We set up a test event in the Lambda function,  for testing purposes. Afterward, we execute the Lambda function, which allows us to retrieve the details of a specific ID from the DynamoDB table. This way we can check that the lambda function was deployed and is running correctly.
+
+![23](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/17a3ec39-ca97-4bc8-b886-57de60312e40)
+
+![24](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/c8ba7d2b-d820-4223-85d8-4d85a912530b)
+
+Now, the pipeline will execute each time the master branch receives a push. To confirm this, make this change ```
+return response["Items"][0] if any(response["Items"]) else {"Result" : "No registers found"}
+``` in the Lambda function within the master branch. Once this change is made, the pipeline will be triggered, resulting in an automatic modification of the Lambda function.
