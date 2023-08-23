@@ -67,7 +67,7 @@ sh dynamodb.sh
 
 ![11](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/489b2839-d37e-497e-9c8a-bcd7f8a3dead)
 
-![12](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/321b3f75-1c03-4541-88be-e20d0f3f9f1e)
+![12](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/48746a5d-3962-46a4-b599-fed9a292f5b6)
 
 ![13](https://github.com/anthonymelchor/CICD-lambda-serverless/assets/48603061/59d0f439-8694-4213-b23e-be3fb124803f)
 
