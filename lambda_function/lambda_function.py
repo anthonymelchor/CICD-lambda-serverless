@@ -11,8 +11,7 @@ class DynamoAccessor:
 
     def get_data_from_dynamo(self, id):
         response = self.table.query(KeyConditionExpression=Key('id').eq(id))
-        return response["Items"][0] if any(response["Items"]) else {"Result" : "No registers found"}
-
+        return response["Items"][0] if any(response["Items"]) else None
 def lambda_handler(event, context):
     dynamo_backend = DynamoAccessor(DYNAMO_BD)
     db_element = dynamo_backend.get_data_from_dynamo(event['id'])
